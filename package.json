@@ -1,0 +1,18 @@
+{
+  "name": "bookmarqly-api",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:up": "drizzle-kit up"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.32.1",
+    "hono": "^4.5.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "drizzle-kit": "^0.23.1",
+    "wrangler": "^3.57.2"
+  }
+}
